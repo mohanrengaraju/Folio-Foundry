@@ -29,6 +29,9 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-footer: var(--footer);
+  --color-footer-fg: var(--footer-fg);
+  --color-footer-muted: var(--footer-muted);
   --font-display: var(--font-display);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
@@ -61,6 +64,11 @@
   --input: oklch(0.18 0.012 80 / 0.25);
   --ring: var(--ember);
 
+  /* Footer — always dark regardless of theme */
+  --footer: oklch(0.14 0.01 80);
+  --footer-fg: oklch(0.94 0.015 80);
+  --footer-muted: oklch(0.94 0.015 80 / 0.5);
+
   --font-display: "Fraunces", "Times New Roman", serif;
   --font-sans: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
@@ -83,6 +91,11 @@
   --accent-foreground: oklch(0.17 0.01 80);
   --border: oklch(0.96 0.018 80 / 0.15);
   --input: oklch(0.96 0.018 80 / 0.2);
+
+  /* Footer stays dark in dark mode too */
+  --footer: oklch(0.11 0.008 80);
+  --footer-fg: oklch(0.92 0.015 80);
+  --footer-muted: oklch(0.92 0.015 80 / 0.5);
 }
 
 @layer base {
